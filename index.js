@@ -45,9 +45,9 @@ function currentLine(katzDeliLine){
             string = string + number + ". " + katzDeliLine[i] + ", ";
         }
       
-    string = string.split(""); //turns string to array.
+    string = string.split(""); 
     string.pop();
-    string.pop();//remove the last two elemnts from end of array;
+    string.pop();
     string = string.join("");
     
     return string;

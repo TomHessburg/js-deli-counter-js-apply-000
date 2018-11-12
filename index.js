@@ -8,6 +8,12 @@ function takeANumber(currentPeople, newName){
 }
 
 
+
+
+
+
+
+
 function nowServing(katzDeliLine){
   
   if(katzDeliLine.length > 0){
@@ -21,6 +27,13 @@ function nowServing(katzDeliLine){
 }
 
 
+
+
+
+
+
+
+
 function currentLine(katzDeliLine){
   if(katzDeliLine.length > 0){
     var string = "The line is currently: "
@@ -32,14 +45,11 @@ function currentLine(katzDeliLine){
             string = string + number + ". " + katzDeliLine[i] + ", ";
         }
         
-        //okay, I KNOW THIS IS SLOPPY, im sorry, i had a few ideas on how to do this much more elegantly but none of them went as expected!!! GRRR!! help will certainly be appreciated here
-       //so it would be easier to just use .pop(), but for some reason it isnt working that i dont understand?
+                //okay, I KNOW THIS IS SLOPPY, im sorry, i had a few ideas on how to do this much more elegantly but none of them went as expected!!! GRRR!! help will certainly be appreciated here
       
-    string = string.split("");
-    var popper = string.length-2
-    var popper2 = string.length-1
-    delete string[popper];
-    delete string[popper2];
+    string = string.split(""); //turns string to array.
+    string.pop();
+    string.pop();//remove the last two elemnts from end of array;
     string = string.join("");
     
     return string;
@@ -51,8 +61,5 @@ function currentLine(katzDeliLine){
   
   
 }
-
-
-
 
 

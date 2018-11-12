@@ -44,8 +44,6 @@ function currentLine(katzDeliLine){
             
             string = string + number + ". " + katzDeliLine[i] + ", ";
         }
-        
-                //okay, I KNOW THIS IS SLOPPY, im sorry, i had a few ideas on how to do this much more elegantly but none of them went as expected!!! GRRR!! help will certainly be appreciated here
       
     string = string.split(""); //turns string to array.
     string.pop();
